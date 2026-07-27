@@ -1,0 +1,80 @@
+/* admin.css - Premium admin UI styles */
+
+/* Base body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf5f0; /* petal cream */
+    color: #2c1e33; /* plum ink */
+    line-height: 1.6;
+}
+
+/* Container max width */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Card component */
+.card {
+    background: #ffffff;
+    border: 2px solid #2c1e33;
+    border-radius: 0.75rem;
+    box-shadow: 4px 4px 0 rgba(44,30,51,1);
+    padding: 1.25rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 rgba(44,30,51,1);
+}
+
+/* Button base */
+.btn {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 2px solid #2c1e33;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-primary {
+    background-color: #5c9ead; /* sky ribbon */
+    color: #ffffff;
+    border-color: #5c9ead;
+}
+.btn-primary:hover {
+    background-color: #4b8a99;
+    transform: translate(-1px, -1px);
+}
+
+/* Utility spacing */
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.p-4 { padding: 1rem; }
+
+/* Table base */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    text-align: left;
+    background: #ffffff;
+    border: 2px solid #2c1e33;
+    font-size: 0.875rem;
+}
+.table th {
+    background: #f2e8e5;
+    font-weight: 600;
+}
+.table tbody tr:hover td {
+    background: #f9f5f4;
+}
