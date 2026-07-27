@@ -25,6 +25,9 @@
                         <x-nav-link :href="route('admin.packages.index')" :active="request()->routeIs('admin.packages.*')">
                             Kelola Paket
                         </x-nav-link>
+                        <x-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.*')">
+                            Kelola Member
+                        </x-nav-link>
                     @endif
                 </div>
             </div>
@@ -91,6 +94,9 @@
                 </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('admin.packages.index')" :active="request()->routeIs('admin.packages.*')">
                     Kelola Paket
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.*')">
+                    Kelola Member
                 </x-responsive-nav-link>
             @endif
         </div>

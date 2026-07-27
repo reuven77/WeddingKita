@@ -7,6 +7,7 @@ use App\Http\Controllers\RentalController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminItemController;
 use App\Http\Controllers\AdminPackageController;
+use App\Http\Controllers\AdminUserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CatalogController::class, 'index'])->name('home');
@@ -44,6 +45,10 @@ Route::middleware('auth')->group(function () {
         Route::prefix('admin')->name('admin.')->group(function () {
             Route::resource('items', AdminItemController::class)->except(['show']);
             Route::resource('packages', AdminPackageController::class)->except(['show']);
+
+            // Admin: Manajemen Akun Member
+            Route::get('users', [AdminUserController::class, 'index'])->name('users.index');
+            Route::delete('users/{user}', [AdminUserController::class, 'destroy'])->name('users.destroy');
         });
     });
 
