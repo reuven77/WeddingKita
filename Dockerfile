@@ -36,6 +36,6 @@ RUN npm install && npm run build
 RUN chmod -R 775 storage bootstrap/cache \
     && chmod +x ./docker/start.sh
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["/bin/sh", "./docker/start.sh"]
