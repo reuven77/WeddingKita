@@ -12,6 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('images/logoWK.png') }}">
+
         <!-- Scripts & Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -20,8 +24,9 @@
         <!-- Navbar -->
         <nav class="sticky top-0 z-50 bg-petal-cream/80 backdrop-blur border-b-2 border-plum-ink py-4 px-6 md:px-12">
             <div class="max-w-7xl mx-auto flex items-center justify-between">
-                <a href="/" class="font-display text-3xl font-bold tracking-tight italic hover:opacity-85 transition-opacity">
-                    WeddingKita
+                <a href="/" class="flex items-center gap-2.5 hover:opacity-90 transition">
+                    <img src="{{ asset('images/logoWK.png') }}" alt="WeddingKita Logo" class="h-8 w-auto md:h-10 shrink-0 object-contain">
+                    <span class="font-display text-2xl md:text-3xl font-bold italic text-plum-ink tracking-tight whitespace-nowrap">WeddingKita</span>
                 </a>
                 <div class="flex items-center gap-4">
                     <a href="/" class="font-mono text-xs uppercase font-bold text-plum-ink/75 hover:text-plum-ink">
@@ -260,7 +265,10 @@
         <!-- Footer -->
         <footer class="border-t-2 border-plum-ink bg-white/50 py-12 px-6 md:px-12 text-center text-plum-ink/50 font-mono text-[10px] uppercase tracking-widest mt-24">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-                <span>© {{ date('Y') }} WeddingKita. All rights reserved.</span>
+                <div class="flex items-center gap-3">
+                    <img src="{{ asset('images/logoWK.png') }}" alt="WeddingKita Logo" class="h-8 w-auto md:h-10 object-contain">
+                    <span>© {{ date('Y') }} WeddingKita. All rights reserved.</span>
+                </div>
                 <span class="font-bold text-plum-ink/75">Premium Bridal Gown & Suit Rental</span>
             </div>
         </footer>

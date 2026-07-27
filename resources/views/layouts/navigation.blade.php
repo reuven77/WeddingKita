@@ -5,8 +5,9 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="/" class="font-display text-2xl font-bold italic text-plum-ink">
-                        WeddingKita
+                    <a href="/" class="flex items-center gap-2.5 hover:opacity-90 transition">
+                        <img src="{{ asset('images/logoWK.png') }}" alt="WeddingKita Logo" class="h-8 w-auto md:h-10 shrink-0 object-contain">
+                        <span class="font-display text-2xl md:text-3xl font-bold italic text-plum-ink tracking-tight whitespace-nowrap">WeddingKita</span>
                     </a>
                 </div>
 

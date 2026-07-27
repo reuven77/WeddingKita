@@ -222,7 +222,13 @@ routes/
 | **Fase 5: Testing** | ✅ Selesai | Unit + Feature (AdminAccess, RentalController, PolicyAuthorization, dll) |
 | **Fase 6: Priority 2 & CRUD Admin** | ✅ Selesai | Form Requests, Policies, Mailables, CRUD views untuk Item & Paket |
 | **Fase 7: Pembayaran & Bug Fixes** | ✅ Selesai | Sistem konfirmasi pembayaran, cetak invoice, perbaikan logika overlap paket, tracking timeline UI/UX. Semua 53 test passed. |
-| **Fase 8: Deploy** | 🔲 Belum | Production environment |
+| **Fase 8: Deploy & Branding** | ✅ Selesai | Railway Dockerfile deployment, admin user management (`/admin/users`), dan integrasi logo merek `logoWK.png` + favicon `favicon.ico`/`logoWK.png` di seluruh layout aplikasi. |
+
+### 🎨 Branding & Logo Assets
+- **Logo Image**: `public/images/logoWK.png` (disediakan juga alias `logo.png`)
+- **Favicon**: `public/images/favicon.ico` / `public/images/logoWK.png`
+- **Integrasi View**: Header/Navbar, Footer, dan Head (`<link rel="icon">`) pada `layouts/app.blade.php`, `layouts/navigation.blade.php`, `layouts/guest.blade.php`, `welcome.blade.php`, `pages/item-detail.blade.php`, dan `pages/package-detail.blade.php`.
+
 
 ---
 
