@@ -167,13 +167,14 @@ app/
     Controllers/     # Thin controllers — hanya terima request + panggil Service:
                      #   AdminItemController.php (CRUD Item Admin)
                      #   AdminPackageController.php (CRUD Paket Admin)
+                     #   AdminUserController.php (Manajemen & Hapus Member Admin)
                      #   CatalogController.php, RentalController.php, DashboardController.php
                      #   PaymentController.php (Upload bukti, cetak nota, konfirmasi)
     Middleware/      # Auth (CheckRole middleware)
     Requests/        # Form Request (validasi server-side):
                      #   StoreItemRequest.php, UpdateItemRequest.php
                      #   StorePackageRequest.php, UpdatePackageRequest.php
-                     #   StoreRentalRequest.php, StoreFittingRequest.php
+                     #   StoreRentalRequest.php, UpdateFittingRequest.php
                      #   UpdateRentalStatusRequest.php, UpdateFittingStatusRequest.php
   Mail/              # Mailable classes:
                      #   RentalConfirmedMail.php  (antrian email konfirmasi sewa)
@@ -195,6 +196,7 @@ resources/
     admin/           # Tampilan Manajemen Admin:
                      #   items/index.blade.php, items/create.blade.php, items/edit.blade.php
                      #   packages/index.blade.php, packages/create.blade.php, packages/edit.blade.php
+                     #   users/index.blade.php (Halaman Kelola & Hapus Akun Member)
     components/      # Blade components:
                      #   garment-tag-card.blade.php
                      #   stamp-badge.blade.php
