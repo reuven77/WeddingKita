@@ -354,11 +354,7 @@
             <!-- Hero Content -->
             <div class="hero-content w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 lg:py-36" id="hero-inner">
                 <div class="max-w-3xl">
-                    <!-- Eyebrow -->
-                    <div class="reveal mb-6 inline-flex items-center gap-3">
-                        <span class="h-px w-8 bg-plum-ink/40"></span>
-                        <span class="font-mono text-[10px] font-bold tracking-[0.3em] uppercase text-plum-ink/65">WK · Butik Busana Pengantin Premium</span>
-                    </div>
+                    
 
                     <!-- Main Heading -->
                     <h1 class="reveal reveal-delay-1 font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight italic leading-[1.05] mb-6">
